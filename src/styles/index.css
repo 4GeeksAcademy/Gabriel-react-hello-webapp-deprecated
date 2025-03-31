@@ -1,3 +1,146 @@
-/* 
-    General Styles
-*/
+@import "tailwindcss";
+@plugin "daisyui";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: #444444 !important; /* Fuerza el fondo negro */
+  color: white;
+}
+
+.tabla,
+table {
+  background-color: inherit !important; /* Hereda el fondo negro del body */
+}
+
+.bar {
+  height: 100vh;
+  background-color: #151515;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
+  padding-left: 30px;
+}
+
+.drop {
+  padding-right: 70px;
+}
+
+.navbar {
+  background-color: #000000;
+  color: white;
+}
+
+.descripcion {
+  color: white;
+  padding-left: 100px;
+  padding-right: 30px;
+  width: 500px;
+  height: auto;
+}
+
+.lista {
+  color: white; /* Corregido de negro a blanco */
+}
+
+.tabla {
+  max-width: 600px;
+  display: flex;
+}
+
+.aliear {
+  display: flex;
+}
+
+.listadepersonajes {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+/* Ajustar elementos de la lista */
+.listamapfavoritos {
+  padding-right: 0 !important;
+  justify-content: flex-end !important;
+  width: 150px;
+  color: white; /* Corregido de negro a blanco */
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+}
+
+.color {
+  background-color: rgb(124, 124, 124);
+  border: solid 1px black !important;
+}
+
+.divdescripcion {
+  color: white;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  margin-right: -150px;
+}
+
+.accordion {
+  width: 800px;
+}
+
+h1 {
+  color: white;
+}
+
+.divvistas {
+  display: flex;
+  height: 100vh;
+}
+
+.list {
+  margin-top: 20px; /* Reducido para evitar desajustes */
+}
+
+.links {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.favoritos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.fondo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.listnav {
+  text-decoration: none;
+}
+
+.tex {
+  text-decoration: none;
+  color: white;
+}
+
+.text {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}

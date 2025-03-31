@@ -9,6 +9,13 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Personajes } from "./views/Personajes.jsx";
+import { Planetas } from "../js/views/Planetas.jsx";
+import { Vehiculos } from "./views/Vehiculos.jsx";
+import { Vistaspersonajes } from "./views/Vistaspersonajes.jsx";
+import { VistasPlanetas } from "./views/VistasPlanetas.jsx";
+import { VistasVehiculos } from "./views/VistaVehiculo.jsx";
+
 
 //create your first component
 const Layout = () => {
@@ -22,12 +29,16 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} />
-						<Route path="*" element={<h1>Not found!</h1>} />
+					<Route path= "/" element={<Home />} />
+        				<Route path="/single/:theId" element={ <Single />} />
+        				<Route path="/demo" element={<Demo />} />
+        				<Route path="/Personajes" element={<Personajes/>} />
+        				<Route path="/Planetas" element={<Planetas/>} />
+        				<Route path="/vehiculos" element={<Vehiculos/>} />
+						<Route path="/vistaspersonajes/:id" element={<Vistaspersonajes/>} />
+						<Route path="/vistasplanetas/:id" element={<VistasPlanetas/>} />
+						<Route path="/vistasvehiculos/:id" element={<VistasVehiculos/>} />
 					</Routes>
-					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>
